@@ -1,0 +1,20 @@
+<style type="text/css">
+    html { height: 100% }
+    body { height: 100%; margin: 0px; padding: 0px }
+    .google-map{width:300px; height:300px}
+</style>
+<div>{{help}}</div>
+<label>My id: {{myId}} </label>
+<p/>
+<div ng-hide="pendingGET">
+    <div ng-hide="connectionEstablished">
+        <div ng-hide = "selected">
+            <button ng-click="host()" >Host</button>
+            <p/>
+            Or connect to: <input ng-model="connectToId"> </input>
+            <button ng-click="connect()" >Connect</button>
+            <p/>
+        </div>
+    </div>
+</div>
+Percentage received (last 2 sec): %{{result}}
